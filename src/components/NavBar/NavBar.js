@@ -1,4 +1,6 @@
+import React from 'react'
 import './NavBar.css'
+
 
 const NavBar = () => {
     return (
@@ -12,6 +14,7 @@ const NavBar = () => {
                     <li><a href='#'>Notebooks</a></li>
                 </ul>
             </div>
+            
         </nav>
         
     )
