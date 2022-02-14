@@ -5,3 +5,7 @@
     font-style: italic;
     height: 300px;
 }
+
+.cardStyle{
+    display:inline-block;
+}

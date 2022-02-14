@@ -1,0 +1,110 @@
+const products = [
+    {
+        modelo: "Ryzen 5",
+        generacion: 1600,
+        frecuencia: "3.6ghz",
+        nucleos: 6,
+        stock: 5,
+        precio: 29999,
+        img:"https://www.venex.com.ar/products_images/1506966323_crop410_11157ryzen5pibleftfacing1260x709.png",
+        id: 0,
+        cant: 1,
+    },
+    {
+        modelo: "Ryzen 3",
+        generacion: "3200G",
+        frecuencia: "3.6ghz",
+        nucleos: 4,
+        stock: 3,
+        precio: 36999,
+        img:"https://www.venex.com.ar/products_images/1585940629_amd_ryzen_3_3200g_am4.jpg",
+        id: 1,
+        cant: 1,
+    },
+    {
+        modelo: "Ryzen 5",
+        generacion: "3600",
+        frecuencia: "3.6ghz",
+        nucleos: 6,
+        stock: 2,
+        precio: 47999,
+        img:"https://www.venex.com.ar/products_images/1590786626_microprocesadoramdryzen53400gstealthcgzen2am4.jpg",
+        id: 2,
+        cant: 1,
+    },
+    {
+        modelo: "Ryzen 7",
+        generacion: "5800x",
+        frecuencia: "4.7ghz",
+        nucleos: 8,
+        stock: 4,
+        precio: 59999,
+        img:"https://www.venex.com.ar/products_images/1605015858_microprocesadoramdryzen75800x.jpg",
+        id: 3,
+        cant: 1,
+    },
+    {
+        modelo: "Ryzen 9",
+        generacion: "5950x",
+        frecuencia: "4.9ghz",
+        nucleos: 16,
+        stock: 6,
+        precio: 168999,
+        img:"https://www.venex.com.ar/products_images/1609790688_microprocesadoramdryzen95900x.jpg",
+        id: 4,
+        cant: 1,
+    },
+    {
+        modelo: "Intel i3",
+        generacion: 10100,
+        frecuencia: "4.3ghz",
+        nucleos: 4,
+        stock: 3,
+        precio: 24999,
+        img:"https://www.venex.com.ar/products_images/1593786609_ilu.jpg",
+        id: 5,
+        cant: 1,
+    },
+    {
+        modelo: "Intel i5",
+        generacion: 10400,
+        frecuencia: "4.3ghz",
+        nucleos: 6,
+        stock: 4,
+        precio: 29999,
+        img:"https://www.venex.com.ar/products_images/1617202625_1019-producto-i5i5-system-linq-enumerabletakeiteratord-251system-char.png",
+        id: 6,
+        cant: 1,
+    },
+    {
+        modelo: "Intel i7",
+        generacion: 10700,
+        frecuencia: "4.8ghz",
+        nucleos: 8,
+        stock: 1,
+        precio: 54999,
+        img:"https://www.venex.com.ar/products_images/1626718395_microprocesador-intel-core-i7-10700f-cometlake-4.8ghz-sgraficos.jpg",
+        id: 7,
+        cant: 1,
+    },
+    {
+        modelo: "Intel i9",
+        generacion: 10900,
+        frecuencia: "5.2ghz",
+        nucleos: 10,
+        stock: 1,
+        precio: 59999,
+        img:"https://www.venex.com.ar/products_images/1626965846_1599244331_450_1000.png",
+        id: 8,
+        cant: 1
+    },
+    
+];
+
+export const getProducts = () => {
+    return new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(products);
+    }, 2000);
+    });
+};
