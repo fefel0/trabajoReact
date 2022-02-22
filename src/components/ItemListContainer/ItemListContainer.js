@@ -2,33 +2,39 @@ import { useEffect, useState } from 'react'
 import './ItemListContainer.css'
 import { getProducts } from '../api';
 import ItemList from '../ItemList/ItemList';
-import ItemCount from '../ItemCount/ItemCount'
+
 
 const ItemListContainer = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState()
+    const [loading, setLoading] = useState(true)
 
-
+    
     useEffect(() => {
-        getProducts().then((products) =>{
-            setProducts(products)
+        getProducts().then(item => {
+            setProducts(item)
+        }).catch(err  => {
+            console.log(err)
+        }).finally(() => {
+            setLoading(false)
         })
+
+        return (() => {
+            setProducts()
+        })          
     }, [])
-
-    const handleOnAdd = (quantity) => {
-        alert(`se añadieron ${quantity} productos`)
-    }
-
+    
     return (
-        <div className='itemListContainer'>
-            <div>
-            <ItemCount stock={10} initial={1} onAdd={handleOnAdd}/>
-            </div>
-            <div className='cardStyle'>
-            <ItemList products={products} />
-            </div>
+        <div className="ItemListContainer">
+            {
+                loading ? 
+                    <h1>Cargando productos...</h1> :  
+                products.length ? 
+                    <ItemList products={products}/> : 
+                    <h1>No se encontraron productos!</h1>
+            }
         </div>
-    )
+    )    
+    
 }
-
 
 export default ItemListContainer
