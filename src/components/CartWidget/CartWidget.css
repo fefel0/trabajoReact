@@ -1,3 +1,15 @@
-.BtnCart{
-    display:inline-flex;
+.cartBtn{
+    display: flex;
+    justify-content: center;
+    font-size: 3.2rem;
+}
+.countItem{
+    display: flex;
+    position: absolute;
+    background-color: #ffd60a;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    top: 0;
+    border-radius: 5rem;
+    border: 2rem;
 }

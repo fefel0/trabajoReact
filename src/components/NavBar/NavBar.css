@@ -6,6 +6,11 @@
     height: 80px;
 }
 
+.titleEcommerce{
+    color: #003566;
+    text-decoration: none;
+}
+
 .NavItems{
     display: flex;
     align-items: center;
@@ -16,8 +21,9 @@
     justify-content: end;
 }
 
-.Option {
+.Select {
     text-decoration: none;
+    color: #003566;
     padding: 12px;
     flex: none;
     display: flex;
@@ -29,10 +35,10 @@
     outline: inherit;
 }
 
-.ActiveOption {
+.Selected {
     text-decoration: none;
     padding: 12px;
-    background: red;
+    background: #ffd60a;
     flex: none;
     display: flex;
     align-self: center;

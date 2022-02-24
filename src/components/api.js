@@ -311,6 +311,15 @@ const products = [
     },
 ];
 
+//filter for category
+
+const categories = [
+    {id: "procesador", description: "Procesadores"},
+    {id: "placa de video", description: "Placa de Video"},
+    {id: "notebook", description: "Notebook"},
+    {id: "motherboard", description: "Motherboard"},
+]
+
 export const getProducts = (idCategory) => {
     return new Promise ((resolve) => {
         const productsToResolve = idCategory ? products.filter(item => item.category === idCategory) : products
@@ -329,16 +338,6 @@ export const getProduct = (id) => {
         }, 1000)
     })
 }
-
-//filter for category
-
-const categories = [
-    {id: "procesador", description: "Procesadores"},
-    {id: "placa de video", description: "Placa de Video"},
-    {id: "notebook", description: "Notebook"},
-    {id: "motherboard", description: "Motherboard"},
-]
-
 export const getCategories = () => {
     return new Promise((resolve) => {
         setTimeout(() => {

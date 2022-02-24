@@ -5,14 +5,14 @@ const Item = ({product}) => {
 
     return (
         <div className="CardProduct">
-                <h2 className="ItemHeader">
+                <h2 className="ItemMarca">
                     {product.marca}
                 </h2>
-                <img src={product.img} width='20%' alt={product.marca} className="ItemImg"/>
-                <p className="Info">
+                <img src={product.img} width='40%' alt={product.marca} className="ItemImg"/>
+                <p className="ItemPrecio">
                     Precio: ${product.precio}
                 </p>       
-            <footer className='ItemFooter'>
+            <footer className='ItemDetail'>
                 <Link to={`/detail/${product.id}`}>Ver detalle</Link>
             </footer>
         </div>

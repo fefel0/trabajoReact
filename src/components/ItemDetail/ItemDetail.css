@@ -1,0 +1,10 @@
+.ItemsDetails{
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    justify-items: center;
+    text-align: center;
+    width: 35rem;
+    margin-left: 42rem;
+    border: 1px solid #828282;
+}

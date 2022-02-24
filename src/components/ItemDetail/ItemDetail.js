@@ -14,7 +14,7 @@ const ItemDetail = ({ product }) => {
             <h2>Marca: {product.marca}</h2>
             <h3>Modelo: {product.modelo}</h3>
             <div>
-                <img src={product.img} width='30%' alt={product.cat} />
+                <img src={product.img} width='60%' alt={product.cat} />
             </div>
             <div>
                 <h3>Categoria: {product.category}</h3>

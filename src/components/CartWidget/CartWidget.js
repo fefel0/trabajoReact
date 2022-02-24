@@ -7,8 +7,8 @@ const CartWidget = () => {
     return (
         <div>
         <button className='BtnCart'>
-            <FaShoppingCart />
-            <p>0</p>
+            <FaShoppingCart className='cartBtn'/>
+            <p className='countItem'>0</p>
         </button>
         </div>
     )
