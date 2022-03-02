@@ -1,0 +1,14 @@
+.cntProd {
+    display: inline-block;
+    width: 95%;
+    text-align: left;
+    height: 750px;
+    border: 2px solid #828282;
+    border-radius: 5rem;
+}
+
+.btnCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
