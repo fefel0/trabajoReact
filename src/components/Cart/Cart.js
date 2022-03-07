@@ -4,6 +4,7 @@ import './Cart.css'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
+
     const { products, removeItem, productTotal } = useContext (CartContext)
 
     if(products.legth === 0) {
