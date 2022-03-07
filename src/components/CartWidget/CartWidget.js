@@ -1,15 +1,16 @@
-import React from 'react';
+
 import './CartWidget.css'
 import { FaShoppingCart } from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
+
+
     return (
         <div>
-        <button className='BtnCart'>
+        <Link to={'/cart'} className='BtnCart'>
             <FaShoppingCart className='cartBtn'/>
-            <p className='countItem'>0</p>
-        </button>
+        </Link>
         </div>
     )
 }
