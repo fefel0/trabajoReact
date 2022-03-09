@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './NavBar.css'
 import '../CartWidget/CartWidget'
 import CartWidget from '../CartWidget/CartWidget'
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import CartContext from '../../context/CartContext'
 import { getDocs, collection } from 'firebase/firestore'
 import { firestoreDataBase } from '../../services/firebase/firebase'
 
 const NavBar = () => {
     const [categories, setCategories] = useState([])
+
+    const { products } = useContext(CartContext)
     
     useEffect(() => {
         getDocs(collection(firestoreDataBase, 'categories')).then(response => {
@@ -30,7 +33,7 @@ const NavBar = () => {
                 }>{cat.description}</NavLink>)}
             </div>
             <div className='BtnCart'>
-            <CartWidget />
+            {products.length > 0 && <CartWidget />}
             </div>
         </nav>
     )
