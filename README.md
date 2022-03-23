@@ -2,7 +2,7 @@
 
 ## Informacion del Proyecto: Ecommerce desarrollado para Jarwar, pagina dedicada a la venta de Hardware y tecnologia.
 
-[!alt text] (https://imgkub.com/images/2022/03/23/ezgif.com-gif-maker.gif)
+![Demo](https://imgkub.com/images/2022/03/23/ezgif.com-gif-maker.gif)
 
 ## Ejecutar la aplicacion: 
 1º- Abrir nueva terminal y clonar el repositorio con:
@@ -33,17 +33,17 @@ npm start
 
 ## Futuro del proyecto:
 - Mejora en estilos.
-- Aplicar metodo de pago [Mercado Pago] (https://www.mercadopago.com.ar/developers/es/developer-program/checkout-pro)
+- Aplicar metodo de pago [Mercado Pago](https://www.mercadopago.com.ar/developers/es/developer-program/checkout-pro)
 - Aplicar Testing de Quality a la pagina.
 
 
 ## Desarrollado con:
-- [Visual Studio Code] (https://code.visualstudio.com/)
-- [React] (https://es.reactjs.org/)
-- [React Icons] (https://react-icons.github.io/react-icons/)
-- [Firebase Google] (https://firebase.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [React](https://es.reactjs.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Firebase Google](https://firebase.google.com/)
 
-Por Federico Ramallo:
-· [GitHub](https://github.com/fefel0)
-· [Linkedin](https://www.linkedin.com/in/federico-ramallo-705704218/)
+**Desarrollado por Federico Ramallo:**
+- [GitHub](https://github.com/fefel0)
+- [Linkedin](https://www.linkedin.com/in/federico-ramallo-705704218/)
 
