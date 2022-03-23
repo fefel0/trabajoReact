@@ -12,7 +12,7 @@ const CartWidget = () => {
         <div>
         <Link to={'/cart'} className='BtnCart'>
             <FaShoppingCart className='cartBtn'/>
-            {quantityTotal()}
+            <p className='quantity'>{quantityTotal()}</p>
         </Link>
         </div>
     )

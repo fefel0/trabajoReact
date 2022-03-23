@@ -7,10 +7,8 @@ import { firestoreDataBase } from '../../services/firebase/firebase'
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
-
     const { productId } = useParams()
     
-
     useEffect(() => {
         setLoading(true)
 
@@ -21,13 +19,10 @@ const ItemDetailContainer = () => {
         }).finally(() =>{
             setLoading(false)
         })
-
         return (() => {
             setProduct()
         })
-
     }, [productId])
-
 
     return (
         <div className="ItemDetailContainer" >
@@ -41,4 +36,5 @@ const ItemDetailContainer = () => {
         </div>
     )    
 }
+
 export default ItemDetailContainer

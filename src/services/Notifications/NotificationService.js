@@ -11,6 +11,7 @@ const Notification = ({ message, severity }) => {
         fontSize: '25px',
         borderRadius: '10px',
         top: 80,
+        right: '5px',
         height: '40px',
         
     }

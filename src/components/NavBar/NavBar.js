@@ -10,9 +10,8 @@ import { firestoreDataBase } from '../../services/firebase/firebase'
 
 const NavBar = () => {
     const [categories, setCategories] = useState([])
-
     const { products } = useContext(CartContext)
-    
+
     useEffect(() => {
         getDocs(collection(firestoreDataBase, 'categories')).then(response => {
             const categories = response.docs.map(cat => {
@@ -22,10 +21,9 @@ const NavBar = () => {
         })
     }, [])
 
-    return (
-        
+    return ( 
         <nav className='NavBar'>
-            <Link to={'/'}>
+            <Link className='jarwar' to={'/'}>
                 <h2 className='titleEcommerce'>JARWAR</h2>
             </Link>
             <div className='NavItems'>

@@ -5,6 +5,7 @@
     align-items: center;
     height: 80px;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .titleEcommerce{
@@ -48,4 +49,8 @@
     align-items: center;
     cursor: pointer;
     outline: inherit;
+}
+
+.jarwar {
+    text-decoration: none;
 }

@@ -5,17 +5,13 @@ import { useParams } from 'react-router-dom';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import { firestoreDataBase } from '../../services/firebase/firebase';
 
-
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const { categoryId } = useParams()
 
-    
     useEffect(() => {
         setLoading(true)
-
-        //ternario para filtrar por category, sino no filtro
         const collectionRef = categoryId ?
             query(collection(firestoreDataBase, 'products'), where('category', '==', categoryId)) :
             collection(firestoreDataBase, 'products')
@@ -24,12 +20,10 @@ const ItemListContainer = () => {
             const products = querySnapshot.docs.map(doc =>{
                 return { id: doc.id, ...doc.data()}
             })
-            console.log(products)
             setProducts(products)
         }).finally(() => {
             setLoading(false)
         })
-
         return (() => {
             setProducts()
         })          

@@ -1,5 +1,6 @@
 .Success {
     background-color: #64DD17;
+    animation-duration: 5000ms;
 }
 
 .Error {
