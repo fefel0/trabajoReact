@@ -1,6 +1,7 @@
 # Trabajo final de React para [Coder House](https://www.coderhouse.com/)
 
-## Informacion del Proyecto: Ecommerce desarrollado para Jarwar, pagina dedicada a la venta de Hardware y tecnologia.
+## Documentacion del Proyecto:
+Ecommerce desarrollado para Jarwar, pagina dedicada a la venta de Hardware y tecnologia.
 
 ![Demo](https://imgkub.com/images/2022/03/23/ezgif.com-gif-maker.gif)
 
@@ -11,7 +12,7 @@ https://github.com/fefel0/trabajoReact.git
 ```
 2º- Una vez dentro del proyecto, abrimos nueva terminal y ejecutamos lo siguiente:
 ```sh
-cd coder
+cd trabajoReact
 npm install
 npm start
 ```
@@ -31,8 +32,16 @@ npm start
 
 - Cart ('/cart'): Renderiza los productos agregados por el usuario. Aqui podemos finalizar la compra y completar un formulario con nuestros datos, que seran enviados a la base de datos. Al final de la compra nos devolvera un id de compra para el seguimiento de nuestro pedido.
 
+## Etapas de desarrollo:
+- Se crean los primeros componentes y renderizamos para lograr visualizar el comienzo de nuestra app web.
+- Se simula la conexion a una base de datos, utilizando promesas y asincronia, desde nuestro archivo 'api.js'.
+- Se agrega una navegacion dinamica a traves de routing a nuestra app. Tambien agregamos eventos y context.
+- Suplantamos el archivo 'api.js' por nuestra base de datos de firestore google y realizamos la conexion correctamente.
+- Por ultimo se complementa la pagina con un login y una forma de pago al terminar nuestra compra en el carrito.
+
 ## Futuro del proyecto:
 - Mejora en estilos.
+- Aplicar auth y login.
 - Aplicar metodo de pago [Mercado Pago](https://www.mercadopago.com.ar/developers/es/developer-program/checkout-pro)
 - Aplicar Testing de Quality a la pagina.
 
